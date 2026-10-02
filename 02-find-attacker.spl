@@ -1,8 +1,0 @@
-// 02-find-attacker.spl
-// Purpose: Identify the top source IP by high-severity alerts
-// Expected result: One IP dominating with 90%+ of alerts
-
-index=botsv1 sourcetype=suricata event_type=alert alert.severity=1 earliest=0
-| stats count by src_ip
-| sort -count
-| head 10
