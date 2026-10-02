@@ -129,9 +129,6 @@ ETPRO TROJAN Ransomware/Cerber Checkin Error ICMP Response
 ET WEB_SERVER PHP.//Input in HTTP POST
 ET WEB_SERVER Possible SQLi Attempt in User Agent (Inbound)
 
-### Privacy Violation
-
-ET POLICY Incoming Basic Auth Base64 HTTP Password detected unencrypted
 
 ---
 
@@ -146,7 +143,7 @@ ET POLICY Incoming Basic Auth Base64 HTTP Password detected unencrypted
 
 ---
 
-## Attack Timeline (for correlation)
+## Attack Timeline 
 
 | Time (UTC) | Event |
 |---|---|
