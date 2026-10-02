@@ -1,0 +1,9 @@
+// 07-admin-access.spl
+// Purpose: Trace post-exploitation activity in the admin panel
+// Expected result: Login sequence (POST → 303) and extension installs
+
+index=botsv1 sourcetype=iis c_ip=40.80.148.42 earliest=0
+| where match(cs_uri_stem, "/administrator/")
+| table _time, cs_method, cs_uri_stem, cs_uri_query, sc_status
+| sort _time
+| head 50
