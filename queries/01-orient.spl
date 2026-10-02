@@ -1,0 +1,7 @@
+// 01-orient.spl
+// Purpose: Situational awareness — what data exists in the index?
+// Expected result: List of sourcetypes with event counts
+
+index=botsv1 earliest=0
+| stats count by sourcetype
+| sort -count
