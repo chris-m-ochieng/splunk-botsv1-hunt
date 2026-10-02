@@ -16,6 +16,7 @@ A full incident investigation of a Joomla web application compromise in the BOTS
 
 ## Attack chain
 
+```
 External scan (Acunetix)
     ↓
 SQL injection (com_search) — 16,871 requests
@@ -27,6 +28,7 @@ Malicious extension upload (com_installer&view=install)
 eXtplorer file manager loaded
     ↓
 Remote Code Execution (include_javascript&file=...)
+```
 
 ## Skills demonstrated
 
