@@ -1,0 +1,8 @@
+// 08-timeline.spl
+// Purpose: Build attack timeline — requests per minute
+// Expected result: Time buckets showing attack ramp-up and peak
+
+index=botsv1 sourcetype=iis c_ip=40.80.148.42 cs_uri_stem="/joomla/index.php/component/search/" earliest=0
+| bin _time span=1m
+| stats count by _time
+| sort _time
