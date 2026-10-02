@@ -61,7 +61,7 @@ All investigation was performed on the public BOTSv1 dataset — no real client 
 
 ## Visual evidence
 
-### Attacker identified — 385 of 392 high-severity alerts
+### Attacker and victim identified — 385 of 392 high-severity alerts
 ![Attacker IP](screenshots/02-attacker-ip-victim_ip.png)
 
 ### Attack signatures — SQL injection, XSS, XXE, Shellshock
