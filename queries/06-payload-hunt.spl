@@ -1,0 +1,9 @@
+// 06-payload-hunt.spl
+// Purpose: Extract SQL injection payloads from query strings
+// Expected result: Requests containing SQL keywords and injection patterns
+
+index=botsv1 sourcetype=iis c_ip=40.80.148.42 cs_uri_stem="/joomla/index.php/component/search/" earliest=0
+| where match(cs_uri_query, "(?i)select|union|sleep|response.write|%27|%22|\*|acunetix")
+| table _time, cs_method, cs_uri_query, sc_status
+| sort _time
+| head 30
