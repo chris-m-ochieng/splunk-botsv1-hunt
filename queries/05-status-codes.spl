@@ -1,0 +1,7 @@
+// 05-status-codes.spl
+// Purpose: Verify whether the attack succeeded
+// Expected result: 200/303 codes indicate success; 403/404 indicate blocked
+
+index=botsv1 sourcetype=iis c_ip=40.80.148.42 cs_uri_stem="/joomla/index.php/component/search/" earliest=0
+| stats count by sc_status
+| sort -count
