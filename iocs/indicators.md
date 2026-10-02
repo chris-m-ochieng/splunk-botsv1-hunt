@@ -87,20 +87,35 @@ This string is unique to the Acunetix Web Vulnerability Scanner. Its presence co
 ### Web Application Attack
 
 ET WEB_SERVER Script tag in URI, Possible Cross Site Scripting Attempt
+
 ET WEB_SERVER Onmouseover= in URI - Likely Cross Site Scripting Attempt
+
 ET WEB_SERVER Possible XXE SYSTEM ENTITY in POST BODY
+
 ET WEB_SERVER Possible SQL Injection Attempt SELECT FROM
+
 ET WEB_SERVER SQL Injection Select Sleep Time Delay
+
 ET WEB_SERVER PHP tags in HTTP POST
+
 ET WEB_SERVER allow_url_include PHP config option in uri
+
 ET WEB_SERVER auto_prepend_file PHP config option in uri
+
 ET WEB_SERVER disable_functions PHP config option in uri
+
 ET WEB_SERVER open_basedir PHP config option in uri
+
 ET WEB_SERVER safe_mode PHP config option in uri
+
 ET WEB_SERVER suhosin.simulation PHP config option in uri
+
 GPL EXPLOIT unicode directory traversal attempt
+
 GPL WEB_SERVER Tomcat directory traversal attempt
+
 GPL WEB_SERVER Tomcat null byte directory listing attempt
+
 
 ### Attempted Administrator Privilege Gain
 
