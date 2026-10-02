@@ -1,0 +1,7 @@
+// 03-characterize-attack.spl
+// Purpose: Full attack profile for the identified attacker
+// Expected result: All attack categories and signatures
+
+index=botsv1 sourcetype=suricata event_type=alert alert.severity=1 src_ip=40.80.148.42 earliest=0
+| stats count by alert.category, alert.signature
+| sort -count
