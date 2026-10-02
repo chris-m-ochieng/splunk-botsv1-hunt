@@ -1,0 +1,8 @@
+// 04-pivot-to-iis.spl
+// Purpose: Pivot from network logs to the web server (IIS)
+// Expected result: Top URLs requested by the attacker
+
+index=botsv1 sourcetype=iis c_ip=40.80.148.42 s_ip=192.168.250.70 earliest=0
+| stats count by cs_uri_stem
+| sort -count
+| head 10
